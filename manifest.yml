@@ -1,0 +1,13 @@
+applications:
+- path: target/JavaCloudantApp.war
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: pepsimondo1
+  host: pepsimondo1
+  disk_quota: 1024M
+  services:
+  - dashDB for Analytics-mc
+  - availability-monitoring-auto
+  env:
+    redacted_message: '[PRIVATE DATA HIDDEN]'
